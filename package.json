@@ -1,6 +1,6 @@
 {
   "name": "echart-tree",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "修改echart-tree模块，增加一些功能",
   "scripts": {
     "node": "node app.js"
