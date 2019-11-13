@@ -1,13 +1,16 @@
 {
   "name": "echart-tree",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "修改echart-tree模块，增加一些功能",
   "scripts": {
     "node": "node app.js"
   },
   "main": "./app.js",
   "keywords": ["echart", "tree"],
-  "github": "https://github.com/1549469775/echart-tree",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1549469775/echart-tree.git"
+  },
   "author": "",
   "license": "ISC"
 }
