@@ -1,0 +1,35 @@
+在`series`中的`tree`模块中增加了一个diyExpand节点，`return true`表示可以展开,`false`表示不能展开，目前只判断了处于`series[0]`的情况,实现的效果是：按住ctrl之后点击节点可以展开与收缩，直接点击节点的话不会展开与收缩
+```
+series: [{
+    type: 'tree',
+    roam: true,
+    data: [realData],
+    symbol: 'emptycircle',
+    left: '3%',
+    right: '3%',
+    top: '8%',
+    bottom: '20%',
+    // 缩放
+    zoom: 1,
+    //自定义是否展开节点
+    diyExpand: (name, isExpand) => {
+      if (ctrlDown) {
+        return !isExpand
+      } else {
+        // 收缩
+        ccc.innerHTML = name
+        console.log('click');
+        $("#myModal").modal({
+          keyboard: true
+        })
+        return isExpand
+      }
+    },
+    symbolSize: (v, param) => {
+      if (str && param.name.match(str)) {
+        return 35
+      } else {
+        return 20;
+      }
+    }]
+```
